@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pageGestio</class>
+ <widget class="QWidget" name="pageGestio">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gestión de Videojuegos</string>
+  </property>
+  <layout class="QVBoxLayout" name="rootLayout">
+   <item>
+    <spacer name="spacerTop">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item alignment="Qt::AlignHCenter">
+    <widget class="QFrame" name="gamesCard">
+     <property name="minimumSize">
+      <size>
+       <width>900</width>
+       <height>500</height>
+      </size>
+     </property>
+     <layout class="QVBoxLayout" name="cardLayout">
+      <item>
+       <widget class="QLabel" name="lblTitle">
+        <property name="text">
+         <string>Gestión de Videojuegos</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tblGames">
+        <property name="rowCount">
+         <number>0</number>
+        </property>
+        <property name="columnCount">
+         <number>6</number>
+        </property>
+        <column>
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Nombre</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Plataforma</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Genero</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Precio</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Stock</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="buttonsLayout">
+        <item>
+         <widget class="QPushButton" name="btnAdd">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #4F7EDC;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+}
+QPushButton:hover { background-color: #4F7EDC; }
+QPushButton:pressed { background-color: #4F7EDC; padding-left: 12px; padding-top: 12px; }</string>
+          </property>
+          <property name="text">
+           <string>Regresar</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnEdit">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #4F7EDC;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+}
+QPushButton:hover { background-color: #4F7EDC; }
+QPushButton:pressed { background-color: #4F7EDC; padding-left: 12px; padding-top: 12px; }</string>
+          </property>
+          <property name="text">
+           <string>Editar</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnDelete">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #4F7EDC;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+}
+QPushButton:hover { background-color: #4F7EDC; }
+QPushButton:pressed { background-color: #4F7EDC; padding-left: 12px; padding-top: 12px; }</string>
+          </property>
+          <property name="text">
+           <string>Eliminar</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="spacerBottom">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

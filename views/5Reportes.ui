@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Reportes</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="rootLayout">
+    <item>
+     <spacer name="spacerTop">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QFrame" name="reportCard">
+      <property name="minimumSize">
+       <size>
+        <width>800</width>
+        <height>400</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="cardLayout">
+       <item>
+        <widget class="QLabel" name="lblTitle">
+         <property name="text">
+          <string>Reporte de ventas</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tblReport">
+         <property name="rowCount">
+          <number>0</number>
+         </property>
+         <property name="columnCount">
+          <number>5</number>
+         </property>
+         <column>
+          <property name="text">
+           <string>ID</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Juego</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Cliente</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Cantidad</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Total</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnGenerate">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #4F7EDC;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+}
+QPushButton:hover { background-color: #4F7EDC; }
+QPushButton:pressed { background-color: #4F7EDC; padding-left: 12px; padding-top: 12px; }</string>
+         </property>
+         <property name="text">
+          <string>Generar reporte</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnPrint">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #4F7EDC;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+}
+QPushButton:hover { background-color: #4F7EDC; }
+QPushButton:pressed { background-color: #4F7EDC; padding-left: 12px; padding-top: 12px; }</string>
+         </property>
+         <property name="text">
+          <string>Imprimir reporte</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnAdd">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #4F7EDC;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+}
+QPushButton:hover { background-color: #4F7EDC; }
+QPushButton:pressed { background-color: #4F7EDC; padding-left: 12px; padding-top: 12px; }</string>
+         </property>
+         <property name="text">
+          <string>regresar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <spacer name="spacerBottom">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
