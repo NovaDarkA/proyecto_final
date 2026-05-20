@@ -49,12 +49,12 @@ class Connection:
             self.cursor.execute(sql, values)
             self.connection.commit()
 
-            return self.cursor.rowcount
+            return True
 
         except mariadb.Error as e:
             print(f"Error UPDATE: {e}")
             self.connection.rollback()
-            return 0
+            return False
 
     def delete(self, sql, values):
         try:
