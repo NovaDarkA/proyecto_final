@@ -1,6 +1,5 @@
 from PyQt6 import QtWidgets
 
-
 class loginControler:
     def __init__(self, window, manager):
         self.window = window

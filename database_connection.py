@@ -18,7 +18,7 @@ class Connection:
         try:
             self.connection = mariadb.connect(**self.config)
             self.cursor = self.connection.cursor()
-            print("Conexión exitosa a gamestore_db ✓")
+            print("Conexión exitosa a gamestore_db")
 
         except mariadb.Error as e:
             print(f"Error de conexión: {e}")
